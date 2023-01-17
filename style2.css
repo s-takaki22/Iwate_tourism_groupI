@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+.wrap {
+   overflow: hidden;
+}
+
+ul.ddmenu {
+    margin: 0px;               /* メニューバー外側の余白(ゼロ) */
+    padding: 0px 0px 0px 0px; /* メニューバー内側の余白(左に15px) */
+    background-color:  white; /* バーの背景色(濃い赤色) */
+    justify-content: center;
+    display: flex;
+ }
+ 
+ /* -------------------------- */
+ /* ▼メインメニュー項目の装飾 */
+ /* -------------------------- */
+ 
+ ul.ddmenu li {
+    border        : 2px solid rgb(11, 11, 11);   
+    width: 300px;           /* メニュー項目の横幅(125px) */
+    height: 30px;
+    display: inline-block;  /* ★1:横並びに配置する */
+    list-style-type: none;  /* ★2:リストの先頭記号を消す */
+    position: relative;     /* ★3:サブメニュー表示の基準位置にする */
+ }
+ ul.ddmenu a {
+    height: 30px;
+    background-color: rgb(253, 216, 222); /* メニュー項目の背景色(濃い赤色) */
+    color: chocolate;              /* メニュー項目の文字色(白色) */
+    line-height: 40px;         /* メニュー項目のリンクの高さ(40px) */
+    text-align: center;        /* メインメニューの文字列の配置(中央寄せ) */
+    text-decoration: none;     /* メニュー項目の装飾(下線を消す) */
+    font-weight: bold;         /* 太字にする */
+    display: block;            /* ★4:項目内全域をリンク可能にする */
+ }
+ ul.ddmenu a:hover {
+    background-color: #ffdddd; /* メニュー項目にマウスが載ったときの背景色(淡いピンク) */
+    color: #dd0000;            /* メニュー項目にマウスが載ったときの文字色(濃い赤色) */ 
+}
+ 
+ /* ▼サブメニューは、とりあえず非表示にしておく */
+ ul.ddmenu ul {
+    display: none;         /* ★5:非表示にする */
+ }
+
+
+ /* -------------------- */
+/* ▼サブメニューの装飾 */
+/* -------------------- */
+ul.ddmenu ul {
+    display: none;       /* ★1:標準では非表示にする */
+    margin: 0px;         /* ★2:サブメニュー外側の余白(ゼロ) */
+    padding: 0px;        /* ★3:サブメニュー内側の余白(ゼロ) */
+    position: absolute;  /* ★4:絶対配置にする */
+ }
+ 
+ /* ---------------------------------- */
+ /* ▼サブメニューがある場合に開く処理 */   /* ※サブメニューが1階層しか存在しない場合の記述 */
+ /* ---------------------------------- */
+ ul.ddmenu li:hover ul {
+    display: block;      /* ★5:マウスポインタが載っている項目の内部にあるリストを表示する */
+   }
+
+
+
+
+ .sample1a {
+    padding       : 20px;                 /* BOX内の余白          */
+    margin-top: 15px;
+    border        : 2px solid pink;       /* BOXの枠線            */
+    font-size     : 18pt;                 /* 前景文字のサイズ     */
+    font-weight   : bold;                 /* 太字                 */
+    color: green;
+    line-height   : 1.3;                  /* 行間隔               */
+    text-align    : center;               /* 文字の中央寄せ       */
+     /* 背景画像(中心に1つ)  */
+    background    : url(img/spri.jpg) center ;
+  }
+
+.sample1b{
+    padding       : 2px;                 /* BOX内の余白          */
+    margin: 15px 0px 0px 13%;
+    border        : 3px solid black;       /* BOXの枠線            */
+    color: chocolate;
+    font-size     : 18pt;                 /* 前景文字のサイズ     */
+    font-weight   : bold;                 /* 太字                 */
+    line-height   : 1.5;                  /* 行間隔               */
+    text-align    : left;               /* 文字の中央寄せ       */
+                                          /* 背景画像(中心に1つ)  */
+    position:relative; top: auto; left: 40px;                                      
+    background-color:  rgb(253, 216, 222);;
+    background-size: contain;
+     width:68%;                                           /* 横幅のサイズを指定    */
+    height:40px;                                          /* 縦幅のサイズを指定    */
+}
+
+.image1{
+    margin-top: 10px;
+    margin: 15px 0px 0px 21%;
+    text-align: left;
+    /* position:relative; top: auto; left: 10px;   */
+    width: 80%;
+    height: 500px
+    ;
+}
+
+
+.text1{
+   margin: 0px 0px -50px 0px;
+    position:relative; top: -100px; left: 20%;  
+    font-size: 2.0vw;
+    overflow-wrap: break-word;
+}
+
+p{
+   width: 62%;
+}
