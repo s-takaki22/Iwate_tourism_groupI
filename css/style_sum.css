@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+.wrap {
+   overflow: hidden;
+}
+
+ul.ddmenu {
+    margin: 0px;               
+    padding: 0px 0px 0px 0px; 
+    background-color:  white; /* バーの背景色(濃い赤色) */
+    justify-content: center;
+    display: flex;
+ }
+ 
+ /* -------------------------- */
+ /* ▼メインメニュー項目の装飾 */
+ /* -------------------------- */
+ 
+ ul.ddmenu li {
+    border        : 2px solid rgb(11, 11, 11);   
+    width: 300px;           
+    height: 30px;
+    display: inline-block;  
+    list-style-type: none;  
+    position: relative;     
+ }
+ ul.ddmenu a {
+    height: 30px;
+    background-color: rgb(96, 220, 98); /* メニュー項目の背景色 */
+    color: rgb(186, 107, 50);              /* メニュー項目の文字色(白色) */
+    line-height: 40px;         
+    text-align: center;        
+    text-decoration: none;     
+    font-weight: bold;         
+    display: block;           
+ }
+ ul.ddmenu a:hover {
+    background-color: #6ed34c; /* メニュー項目にマウスが載ったときの背景色(淡いピンク) */
+    color: #dd0000;            /* メニュー項目にマウスが載ったときの文字色(濃い赤色) */ 
+}
+ 
+ /* ▼サブメニューは、とりあえず非表示にしておく */
+ ul.ddmenu ul {
+    display: none;         /* ★5:非表示にする */
+ }
+
+
+ /* -------------------- */
+/* ▼サブメニューの装飾 */
+/* -------------------- */
+ul.ddmenu ul {
+    display: none;       
+    margin: 0px;        
+    padding: 0px;        
+    position: absolute;  
+ }
+ 
+ /* ---------------------------------- */
+ /* ▼サブメニューがある場合に開く処理 */   /* ※サブメニューが1階層しか存在しない場合の記述 */
+ /* ---------------------------------- */
+ ul.ddmenu li:hover ul {
+    display: block;      /* ★5:マウスポインタが載っている項目の内部にあるリストを表示する */
+   }
+
+
+
+
+ .sample1a {
+    padding       : 20px;                
+    margin-top: 15px;
+    border        : 2px solid rgb(108, 231, 92);       /* BOXの枠線            */
+    font-size     : 18pt;                
+    font-weight   : bold;                 
+    color: green;
+    line-height   : 1.3;                 
+    text-align    : center;             
+     /* 背景画像(中心に1つ)  */
+    background    : url(img/spri.jpg) center ;
+  }
+
+.sample1b{
+    padding       : 2px;                 
+    margin: 15px 0px 0px 13%;
+    border        : 3px solid black;       /* BOXの枠線            */
+    color: chocolate;
+    font-size     : 18pt;                 
+    font-weight   : bold;                 
+    line-height   : 1.5;                  
+    text-align    : left;              
+                                          /* 背景画像(中心に1つ)  */
+    position:relative; top: auto; left: 40px;                                      
+    background-color:  rgb(108, 209, 71);;
+    background-size: contain;
+     width:68%;                                           
+    height:40px;                                          
+}
+
+.image1{
+    margin-top: 10px;
+    margin: 15px 0px 0px 21%;
+    text-align: left;
+    /* position:relative; top: auto; left: 10px;   */
+    width: 80%;
+    height: 500px
+    ;
+}
+
+
+.text1{
+   margin: 0px 0px -50px 0px;
+    position:relative; top: -100px; left: 20%;  
+    font-size: 2.0vw;
+    overflow-wrap: break-word;
+}
+
+p{
+   width: 62%;
+}
