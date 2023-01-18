@@ -26,8 +26,8 @@ ul.ddmenu {
  }
  ul.ddmenu a {
     height: 30px;
-    background-color: rgb(253, 216, 222); /* メニュー項目の背景色(濃い赤色) */
-    color: chocolate;              /* メニュー項目の文字色(白色) */
+    background-color: rgb(244, 173, 10); /* メニュー項目の背景色(濃い赤色) */
+    color: rgb(239, 236, 235);              /* メニュー項目の文字色(白色) */
     line-height: 40px;         
     text-align: center;        
     text-decoration: none;     
@@ -35,8 +35,8 @@ ul.ddmenu {
     display: block;           
  }
  ul.ddmenu a:hover {
-    background-color: #ffdddd; /* メニュー項目にマウスが載ったときの背景色(淡いピンク) */
-    color: #dd0000;            /* メニュー項目にマウスが載ったときの文字色(濃い赤色) */ 
+    background-color: #f4951a; /* メニュー項目にマウスが載ったときの背景色(淡いピンク) */
+    color: #ffffff;            /* メニュー項目にマウスが載ったときの文字色(濃い赤色) */ 
 }
  
  /* ▼サブメニューは、とりあえず非表示にしておく */
@@ -68,7 +68,7 @@ ul.ddmenu ul {
  .sample1a {
     padding       : 20px;                
     margin-top: 15px;
-    border        : 2px solid pink;       /* BOXの枠線            */
+    border        : 2px solid rgb(222, 124, 13);       /* BOXの枠線            */
     font-size     : 18pt;                
     font-weight   : bold;                 
     color: green;
@@ -82,14 +82,14 @@ ul.ddmenu ul {
     padding       : 2px;                 
     margin: 15px 0px 0px 13%;
     border        : 3px solid black;       /* BOXの枠線            */
-    color: chocolate;
+    color: rgb(248, 244, 241);
     font-size     : 18pt;                 
     font-weight   : bold;                 
     line-height   : 1.5;                  
     text-align    : left;              
                                           /* 背景画像(中心に1つ)  */
     position:relative; top: auto; left: 40px;                                      
-    background-color:  rgb(253, 216, 222);;
+    background-color:  rgb(245, 181, 19);;
     background-size: contain;
      width:68%;                                           
     height:40px;                                          
